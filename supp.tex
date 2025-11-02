@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\input{preamble}
+\usepackage{xr-hyper}            % clickable external refs
+\externaldocument[main-]{main}   % pulls labels from main.aux
+
+% Optional: S-numbering (S1, S2, …)
+\renewcommand\thesection{S\arabic{section}}
+\renewcommand\thefigure{S\arabic{figure}}
+\renewcommand\thetable{S\arabic{table}}
+\renewcommand\theequation{S\arabic{equation}}
+\setcounter{secnumdepth}{2}
+
+\begin{document}
+
+See main Figure~\ref{main-fig:rsfc_example} and Eq.~\eqref{main-eq:loss}.
+
+\section*{Supplementary Information}
+% your tables/figures…
+
+\end{document}
+
+
+% \documentclass[12pt]{article}
+% \usepackage{graphicx}
+% \usepackage{amsmath}
+% \usepackage{hyperref}
+% \usepackage{booktabs}
+
+% \begin{document}
+
+% % \section*{Supplementary Information}
+
+% % \renewcommand{\arraystretch}{1} 
+% % \begin{table}[t]
+% % \centering
+% % \begin{tabular}{lcc}
+% % \toprule
+% % \textbf{Name-number of parcels} & \textbf{Yale rsfMRI (Cohen’s d)} & \textbf{HCP rsfMRI (Cohen’s d)} \\
+% % \midrule
+% % Yeo-51        & 0.2149 & 0.2117 \\ \hline
+% % Schaefer-100  & 0.0257 & 0.0176 \\ \hline
+% % Yan-100       & 0.0782 & 0.0826 \\ \hline
+% % Yeo-114       & 0.2372 & 0.1509 \\ \hline
+% % USCBrain-130  & 0.4494 & 0.3424 \\ \hline
+% % Power-130     & 0.6756 & 0.5342 \\ \hline
+% % Schaefer-200  & 0.0444 & 0.0190 \\ \hline
+% % Yan-200       & 0.0618 & 0.0288 \\ \hline
+% % Shen-200      & 0.5244 & 0.4241 \\ \hline
+% % Schaefer-300  & 0.0328 & 0.0001 \\ \hline
+% % Yan-300       & 0.0222 & 0.0004 \\ \hline
+% % Glasser-360   & 0.4058 & 0.3032 \\ \hline
+% % Schaefer-400  & 0.0239 & -0.0151 \\ \hline
+% % Yan-400       & 0.0160 & -0.0085 \\ 
+% % \bottomrule
+% % \end{tabular}
+% % \caption{Effect sizes (measured by Cohen’s d) subject-wise RSFC homogeneity differences between Untamed and baseline atlases on Yale and HCP datasets. A positive Cohen’s d indicates that Untamed introduces a higher RSFC homogeneity than the baseline counterpart, and vice versa.}
+% % \label{tab:rsfc_homo_cohen_d}
+% % \end{table}
+
+
+% % \subsection*{Figure S1}
+% % \begin{figure}[h]
+% %   \centering
+% %   \includegraphics[width=0.6\linewidth]{supp_fig1}
+% %   \caption{An additional analysis.}
+% % \end{figure}
+
+% % \subsection*{Table S1}
+% % \begin{table}[h]
+% %   \centering
+% %   \begin{tabular}{cc}
+% %     \hline
+% %     Method & Score \\
+% %     \hline
+% %     A & 0.91 \\
+% %     B & 0.87 \\
+% %     \hline
+% %   \end{tabular}
+% %   \caption{Supplementary results.}
+% % \end{table}
+
+% \end{document}
